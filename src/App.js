@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from "./components/Counter"
+import DisplayGrid from "./components/DisplayGrid"
+import LoginForm from "./components/LoginForm"
+import Header from './components/Header';
+import { Switch, Route } from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+const App = () => (
+  // <>
+  //   <Counter />
+  //   <DisplayGrid />
+  //   <LoginForm />
+  // </>
+
+  <>
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Counter} />
+      <Route exact path="/displayview" component={DisplayGrid} />
+      <Route exact path="/loginform" component={LoginForm} />
+    </Switch>
+  </>
+
+)
 export default App;

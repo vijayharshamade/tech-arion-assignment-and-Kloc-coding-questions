@@ -1,0 +1,44 @@
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 55vh;
+
+    background-color: blanchedalmond;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+label {
+    font-size: 28px;
+}
+
+input {
+    height: 25px;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    padding: 5px;
+}
+
+.button {
+    border-radius: 5px;
+    width: 18vw;
+    height: 38px
+}
