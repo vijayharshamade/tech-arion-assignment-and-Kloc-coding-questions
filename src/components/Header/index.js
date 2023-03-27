@@ -22,6 +22,18 @@ const Header = () => (
                 </li>
             </Link>
 
+            <Link to="/reactpopup" className='link-decor'>
+                <li className='header-li'>
+                    React Popup
+                </li>
+            </Link>
+
+            <Link to="/table" className='link-decor'>
+                <li className='header-li'>
+                    Table
+                </li>
+            </Link>
+
         </ul>
     </>
 )
