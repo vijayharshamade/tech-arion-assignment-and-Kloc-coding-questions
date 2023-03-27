@@ -19,27 +19,24 @@ const Table = () => {
                         Show Table
                     </button>
                 }
+                position="top-left"
             >
                 {close => (
                     <>
                         <div>
                             <table>
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Age</th>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                </tr>
+                                {data.map((row) => (
+                                    <tr key={row.id}>
+                                        <td>{row.id}</td>
+                                        <td>{row.name}</td>
+                                        <td>{row.age}</td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    {data.map((row) => (
-                                        <tr key={row.id}>
-                                            <td>{row.id}</td>
-                                            <td>{row.name}</td>
-                                            <td>{row.age}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
+                                ))}
                             </table>
                         </div>
                         <button
